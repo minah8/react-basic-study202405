@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import './NoName.js';
+import React from 'react';
+import NoName from './NoName.js';
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <>
-    <NaName />
+    <NoName />
       <div className='App'>
         <h1>메롱메롱~</h1>
         {$h2}
