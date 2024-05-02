@@ -26,10 +26,11 @@ const Expenses = ({ items }) => {
   //   ));
   // };
 
-  const filteredItems = items.filter(
-    (item) => item.date.getFullYear().toString() === filteredYear,
-  );
-  console.log(filteredItems);
+  const filteredItems = items.filter((item) => {
+    console.log('item: ', item);
+    return item.date.getFullYear().toString() === filteredYear;
+  });
+  console.log('filteredItems: ', filteredItems);
 
   // 조건부 렌더링을 위한 변수
   let expenseContent = <p>아직 등록된 지출이 없습니다.</p>;
