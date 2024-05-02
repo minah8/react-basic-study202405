@@ -7,12 +7,12 @@ import ExpenseFilter from './ExpenseFilter';
 const Expenses = ({ items }) => {
   // 선택된 연도 상태값 관리
   const [filteredYear, setFilteredYear] = useState(
-    new Date().getFullYear.toString(),
+    new Date().getFullYear().toString(),
   );
 
   // 자식 컴포넌트 ExpenseFilter에 있는 선택 연도를 끌어올리는 함수.
   const filterChangeHandler = (selectedYear) => {
-    console.log('Expense: ', selectedYear);
+    // console.log('Expenses: ', selectedYear);
     setFilteredYear(selectedYear);
   };
 
@@ -27,10 +27,10 @@ const Expenses = ({ items }) => {
   // };
 
   const filteredItems = items.filter((item) => {
-    console.log('item: ', item);
+    console.log(item);
     return item.date.getFullYear().toString() === filteredYear;
   });
-  console.log('filteredItems: ', filteredItems);
+  console.log(filteredItems);
 
   // 조건부 렌더링을 위한 변수
   let expenseContent = <p>아직 등록된 지출이 없습니다.</p>;
@@ -45,6 +45,7 @@ const Expenses = ({ items }) => {
       />
     ));
   }
+
   return (
     <Card className="expenses">
       <ExpenseFilter onChangeFilter={filterChangeHandler} />
