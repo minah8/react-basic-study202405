@@ -3,7 +3,7 @@ import './ExpenseDate.css';
 
 const ExpenseDate = ({date}) => {
     const year = date.getFullYear();
-    const month = date.toLocaleString('en-us', {month: 'long' });
+    const month = date.toLocaleString('en-us', { month: 'long' });
     const day = date.getDate();
 
   return (
@@ -15,4 +15,4 @@ const ExpenseDate = ({date}) => {
   );
 };
 
-export default ExpenseDate
+export default ExpenseDate;
