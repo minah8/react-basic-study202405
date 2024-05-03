@@ -14,7 +14,7 @@
   
   .button:hover,
   .button:active {
-    background: #F1BAA1;
-    border-color: #F1BAA1;
+    background: #BD613C;
+    border-color: #BD613C;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
   }
