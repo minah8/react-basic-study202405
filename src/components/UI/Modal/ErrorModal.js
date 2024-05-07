@@ -8,7 +8,9 @@ import ReactDOM from 'react-dom';
 import Portal from '../Portal/Portal';
 
 const BackDrop = ({ onConfirm }) => {
-  return <div className={styles.backdrop} onClick={onConfirm} />;
+  return (
+    <div className={styles.backdrop} onClick={onConfirm} />
+  );
 };
 
 const ModalOverlay = ({ title, message, onConfirm }) => {
@@ -37,7 +39,11 @@ const ErrorModal = ({ title, message, onConfirm }) => {
       </Portal>
 
       <Portal destId="overlay-root">
-        <ModalOverlay title={title} message={message} onConfirm={onConfirm} />
+        <ModalOverlay
+          title={title}
+          message={message}
+          onConfirm={onConfirm}
+        />
       </Portal>
     </>
   );
