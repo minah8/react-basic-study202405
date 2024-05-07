@@ -4,7 +4,6 @@ import Card from '../Card';
 import Button from '../Button/Button';
 
 // portal 기능을 사용하기 위한 import
-import ReactDOM from 'react-dom';
 import Portal from '../Portal/Portal';
 
 const BackDrop = ({ onConfirm }) => {
