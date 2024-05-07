@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import MainHeader from './components/SideEffect/MainHeader/MainHeader';
 import Login from './components/SideEffect/Login/Login';
-import Navigation from './components/SideEffect/Navigation/Navigation';
 import Home from './components/SideEffect/Home/Home';
 
 const App = () => {
