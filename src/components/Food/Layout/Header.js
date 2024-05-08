@@ -10,7 +10,6 @@ const Header = () => {
       <header className={styles.header}>
         <h1>ReactMeals</h1>
         <HeaderCartButton />
-        <button>Cart</button>
       </header>
       <div className={mainImage}>
         <img
